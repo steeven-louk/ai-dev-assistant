@@ -47,21 +47,21 @@ docker-compose.yml
 .cursor/
 
 # backend
- /backend/dist/
- /backend/node_modules
- /backend/.env*
- /backend/.env.*
- /backend/package-lock.json
- /backend/npm-debug.log*
+ backend/dist/
+ backend/node_modules
+ backend/.env*
+ backend/.env.*
+ backend/package-lock.json
+ backend/npm-debug.log*
 
  # frontend
- /frontend/node_modules
- /frontend/.env*
- /frontend/.env.*
- /frontend/package-lock.json
- /frontend/npm-debug.log*
- /frontend/yarn-debug.log*
- /frontend/yarn-error.log*
- /frontend/.pnpm-debug.log*
- /frontend/tsconfig.buildinfo
- /frontend/next-env.d.ts
+ frontend/node_modules
+ frontend/.env*
+ frontend/.env.*
+ frontend/package-lock.json
+ frontend/npm-debug.log*
+ frontend/yarn-debug.log*
+ frontend/yarn-error.log*
+ frontend/.pnpm-debug.log*
+ frontend/tsconfig.buildinfo
+ frontend/next-env.d.ts
