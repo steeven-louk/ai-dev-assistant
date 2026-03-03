@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -48,14 +49,14 @@ docker-compose.yml
 
 # backend
  backend/dist/
- backend/node_modules
+ backend/node_modules/
  backend/.env*
  backend/.env.*
  backend/package-lock.json
  backend/npm-debug.log*
 
  # frontend
- frontend/node_modules
+ frontend/node_modules/
  frontend/.env*
  frontend/.env.*
  frontend/package-lock.json
