@@ -19,6 +19,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: 'pnpm'
+
+    # Activer Corepack pour accelerer l'installation de pnpm
+      - name: Enable Corepack
+        run: corepack enable
+
+    # Installer version pnpm
+      - name: Install pnpm
+        run: corepack prepare pnpm@latest --activate
 
       # ---------- BACKEND ----------
       - name: Install backend deps
@@ -32,7 +41,7 @@ jobs:
       # ---------- FRONTEND ----------
       - name: Install frontend deps
         working-directory: ./frontend
-        run: pnpm install
+        run: pnpm install --frozen-lockfile # Utiliser --frozen-lockfile pour s'assurer que le lockfile est respecté
 
       - name: Build frontend
         working-directory: ./frontend
