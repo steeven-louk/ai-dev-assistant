@@ -25,6 +25,7 @@ jobs:
         with:
           node-version: 20
           cache: 'pnpm'
+          cache-dependency-path: './frontend/pnpm-lock.yaml'
 
     # Activer Corepack pour accelerer l'installation de pnpm
       - name: Enable Corepack
