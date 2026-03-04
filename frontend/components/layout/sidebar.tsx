@@ -21,13 +21,13 @@ import { motion } from "motion/react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { useI18n } from "@/hooks/use-i18n"
-// import { useSaaS } from "@/hooks/use-saas"
+import { useSaaS } from "@/hooks/use-saas"
 
 export function Sidebar() {
   const [isCollapsed, setIsCollapsed] = React.useState(false)
   const pathname = usePathname()
   const { t, language, setLanguage } = useI18n()
-//   const { plan, credits, limits } = useSaaS()
+  const { plan, credits, limits } = useSaaS()
 
   const menuItems = [
     { icon: LayoutDashboard, label: t('nav.overview'), href: "/" },
@@ -82,7 +82,7 @@ export function Sidebar() {
       </div>
 
       <div className="p-4 border-t border-border space-y-4">
-        {/* {!isCollapsed && (
+        {!isCollapsed && (
           <div className="px-3 py-2 rounded-lg bg-zinc-900/50 border border-border">
             <div className="flex items-center justify-between mb-1">
               <span className="text-[10px] uppercase font-bold text-zinc-500">{t('pricing.current')}</span>
@@ -100,7 +100,7 @@ export function Sidebar() {
               </div>
             )}
           </div>
-        )} */}
+        )}
 
         <div className="flex items-center gap-2">
           <Button
