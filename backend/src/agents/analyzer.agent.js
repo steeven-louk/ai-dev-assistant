@@ -24,6 +24,5 @@ export async function analyzerAgent(code) {
   /**
    * Validation stricte
    */
-  console.log("parsed", parsed);
   return analysisOutputSchema.parse(parsed);
 }

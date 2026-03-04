@@ -16,8 +16,20 @@ export const analysisInputSchema = z.object({
  * Output de l'agent Analyzer
  */
 export const analysisOutputSchema = z.object({
-  issues: z.array(z.string()),
-  security_risks: z.array(z.string()),
-  performance_problems: z.array(z.string()),
-  complexity_score: z.number().min(0).max(100),
+  issues: z.array(z.object({
+    type: z.enum(["performance", "security", "maintainability"]),
+    message: z.string(),
+    severity: z.enum(["low", "medium", "high"])
+  })),
+  security_risks: z.array(z.object({
+    message: z.string()
+  })),
+  performance_problems: z.array(z.object({
+    message: z.string()
+  })),
+  complexity_score: z.object({
+    maintainability: z.number().min(0).max(100),
+    security: z.number().min(0).max(100),
+    performance: z.number().min(0).max(100)
+  }),
 });
