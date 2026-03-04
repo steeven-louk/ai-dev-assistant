@@ -18,12 +18,6 @@ import Link from "next/link"
 import { motion } from "motion/react"
 import { useI18n } from "@/hooks/use-i18n"
 
-const stats = [
-  { label: "Analyses", value: "128", icon: Activity, color: "text-blue-400" },
-  { label: "Optimizations", value: "42", icon: Zap, color: "text-neon-cyan" },
-  { label: "Security Fixes", value: "15", icon: ShieldCheck, color: "text-neon-emerald" },
-  { label: "Test Coverage", value: "84%", icon: CheckCircle2, color: "text-purple-400" },
-]
 
 const recentAnalyses = [
   { id: 1, name: "auth-service.ts", date: "2 hours ago", score: 92, status: "Optimized" },

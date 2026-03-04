@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { I18nProvider } from "@/hooks/use-i18n";
+import { SaaSProvider } from "@/hooks/use-saas";
 
 
 const inter = Inter({
@@ -28,9 +29,9 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} dark`}>
       <body suppressHydrationWarning className="bg-background text-foreground font-sans">
         <I18nProvider>
-          {/* <SaaSProvider> */}
+          <SaaSProvider>
             {children}
-          {/* </SaaSProvider> */}
+          </SaaSProvider>
         </I18nProvider>
       </body>
     </html>
