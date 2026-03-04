@@ -1,16 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { I18nProvider } from "@/hooks/use-i18n";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const inter = Inter({
   subsets: ['latin'],
@@ -35,11 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} dark`}>
       <body suppressHydrationWarning className="bg-background text-foreground font-sans">
-        {/* <I18nProvider> */}
+        <I18nProvider>
           {/* <SaaSProvider> */}
             {children}
           {/* </SaaSProvider> */}
-        {/* </I18nProvider> */}
+        </I18nProvider>
       </body>
     </html>
   );
