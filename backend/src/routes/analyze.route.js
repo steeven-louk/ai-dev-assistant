@@ -4,12 +4,13 @@
 
 import { Router } from "express";
 import { analyzeController } from "../controllers/analyze.controller.js";
+import { apiLimiter } from "../middlewares/rateLimit.middleware.js";
 
 const analyzeRoute = Router();
 
 /**
  * POST /analyze
  */
-analyzeRoute.post("/", analyzeController);
+analyzeRoute.post("/",apiLimiter, analyzeController);
 
 export default analyzeRoute;
