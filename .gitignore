@@ -44,10 +44,17 @@ next-env.d.ts
 
 # docker
 docker-compose.yml
-.dockerignore
 
 # cursor
 .cursor/
+
+# Markdown instructions
+INTEGRATION.md
+IMPLEMENTATION_SUMMARY.md
+OVERVIEW.md
+QUICK_REFERENCE.md
+VERIFICATION_GUIDE.md
+DELIVERABLES.md
 
 # backend
  backend/dist/
