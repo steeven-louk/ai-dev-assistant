@@ -35,7 +35,7 @@ export default function TestGeneratorPage() {
   const { t } = useI18n()
   const { deductCredit, credits, plan } = useSaaS()
   const { mutate, isPending, data, error } = useGenerateTests()
-console.log("data", data)
+
   React.useEffect(() => {
     if (data) {
       Prism.highlightAll()
@@ -54,8 +54,7 @@ console.log("data", data)
     }
 
     // Trigger mutation
-   const da = mutate({ code })
-   console.log("fata ", da)
+   mutate({ code })
   }
 
   const copyToClipboard = (text: string) => {
