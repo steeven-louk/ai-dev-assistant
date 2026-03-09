@@ -44,6 +44,10 @@ jobs:
         working-directory: ./backend
         run: npm run build
 
+      - name: Check Dockerfile
+        working-directory: ./backend
+        run: docker build -t ai-dev-assistant-backend .
+
       # ---------- FRONTEND ----------
       - name: Install frontend deps
         working-directory: ./frontend
@@ -53,6 +57,6 @@ jobs:
         working-directory: ./frontend
         run: pnpm run build
 
-      # ---------- DOCKER BUILD TEST ----------
-    #   - name: Build Docker backend
-    #     run: docker build -t ai-backend ./backend
+      - name: Check Dockerfile
+        working-directory: ./frontend
+        run: docker build -t ai-dev-assistant-frontend .
