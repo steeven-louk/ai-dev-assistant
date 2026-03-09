@@ -36,7 +36,7 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
         <main className="flex-1 overflow-y-auto p-8 custom-scrollbar">
           {children}
         </main>
-        <footer className="h-16 border-t border-border bg-card/30 backdrop-blur-md flex flex-col items-center justify-center px-8 z-10">
+        <footer className="h-10 border-t border-border bg-card/30 backdrop-blur-md flex justify-between items-center  px-8 z-10">
           <span className="text-sm text-zinc-500">&copy; 2026 DevBoost AI. All rights reserved.</span>
           <span className="text-center">by <i>@steeven loukanou</i></span>
         </footer>

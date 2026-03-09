@@ -29,6 +29,7 @@ import { useSaaS } from "@/hooks/use-saas"
 import { useAnalyzeCode } from "@/hooks/useAnalyzeCode"
 import { CodeEditor } from "@/components/ui/code-editor"
 import { IssuesCard } from "@/components/analyzeCard/issuesCardComponents"
+import { AnalysisModal } from "@/components/modal/AnalysisModal"
 
 export default function AnalyzePage() {
   const [code, setCode] = React.useState("")
@@ -69,6 +70,7 @@ export default function AnalyzePage() {
 
   return (
     <DashboardLayout>
+        <AnalysisModal isPending={isPending} />
       <div className="max-w-6xl mx-auto space-y-8">
         <div className="flex items-center justify-between">
           <div>
