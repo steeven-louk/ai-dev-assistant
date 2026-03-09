@@ -1,0 +1,292 @@
+# AI Dev Assistant - Attribution License
+
+**Version 1.0** | **March 2026**
+
+---
+
+## Grant of Rights
+
+This project is open source and available for use, modification, and distribution subject to the following conditions.
+
+**Copyright © 2026 Steeven Loukanou**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to:
+
+- ✅ **Use** the Software commercially or non-commercially
+- ✅ **Copy** the Software for any purpose
+- ✅ **Modify** the Software to suit your needs
+- ✅ **Merge** code from the Software into other projects
+- ✅ **Publish** modified versions of the Software
+- ✅ **Distribute** the Software or modified versions
+- ✅ **Sublicense** the Software to others
+- ✅ **Sell** products that use this Software
+- ✅ **Fork** this repository on GitHub
+
+---
+
+## Conditions and Requirements
+
+The following conditions MUST be met when using, modifying, or distributing this Software:
+
+### 1. **Attribution is Required** (Mandatory)
+
+When using, modifying, or distributing this Software (in original or modified form), you MUST:
+
+- Include the following notice in a prominent location (README, documentation, about page, etc.):
+  ```
+  This software is based on AI Dev Assistant by Steeven Loukanou
+  (https://github.com/steeven-louk/ai-dev-assistant)
+  ```
+
+- If distributing the Software, include a copy of this LICENSE file or link to it
+
+- In any documentation or about pages, provide proper attribution
+
+- When promoting forks or derivatives, mention the original project
+
+### 2. **License Compatibility**
+
+If you modify the Software and distribute it:
+- You may choose any compatible open-source license for your modifications
+- However, attribution to the original author must be preserved
+- If you sublicense, the subclass must include this attribution requirement
+
+### 3. **No Trademark Use**
+
+You may not use the names, logos, or trademarks associated with this project for your modified versions without explicit written permission from the original author.
+
+### 4. **Derivative Works**
+
+If you create significant modifications:
+- Document the changes clearly in your distribution
+- Include a CHANGELOG or similar document
+- Maintain attribution to the original author
+- Clearly indicate which parts are original and which are modified
+
+---
+
+## Example Attribution Formats
+
+### In README.md
+```markdown
+## Credit
+
+This project is based on [AI Dev Assistant](https://github.com/steeven-louk/ai-dev-assistant) 
+by Steeven Loukanou, used under the Attribution License.
+```
+
+### In Code Comments
+```typescript
+/**
+ * Based on AI Dev Assistant by Steeven Loukanou
+ * https://github.com/steeven-louk/ai-dev-assistant
+ * 
+ * Modified by: [Your Name]
+ * Changes: [What was modified]
+ */
+```
+
+### In Web Applications
+```html
+<!-- In footer or about page -->
+<p>
+  This application is based on 
+  <a href="https://github.com/steeven-louk/ai-dev-assistant">
+    AI Dev Assistant
+  </a> 
+  by Steeven Loukanou, used under the Attribution License.
+</p>
+```
+
+### In GitHub Forks
+```markdown
+# [Your Project Name]
+
+This project is a fork/derivative of 
+[AI Dev Assistant](https://github.com/steeven-louk/ai-dev-assistant) 
+by [Steeven Loukanou](https://github.com/steeven-louk)
+
+**Original Project**: Used under the Attribution License
+**Changes Made**: [Describe your modifications]
+```
+
+---
+
+## What You Can Do
+
+### ✅ Permitted Uses
+
+1. **Commercial Products**: Sell software that includes or uses this Software
+2. **Modifications**: Change, improve, or adapt the Software
+3. **Distribution**: Share the Software with others
+4. **Sublicensing**: License the Software to others (with attribution)
+5. **Private Use**: Use the Software for internal purposes
+6. **Publishing**: Publish articles or tutorials about the Software
+7. **Forks**: Create forks on version control platforms
+8. **Integration**: Integrate into larger projects
+9. **Packaging**: Package the Software for distribution
+10. **Monetization**: Create paid services based on this Software
+
+### ❌ NOT Permitted Without Permission
+
+1. **Remove Attribution**: You cannot remove or obscure attribution to the original author
+2. **Claim Original Authorship**: You cannot claim you created the original Software
+3. **Trademark Use**: You cannot use project trademarks without permission
+4. **False Representation**: You cannot misrepresent the origin of the Software
+
+---
+
+## Warranty and Liability
+
+### No Warranty
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+### Limitation of Liability
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---
+
+## Termination
+
+This license is perpetual and irrevocable. However, your rights under this license will terminate automatically without notice if you:
+
+- Fail to maintain required attribution
+- Use the Software's trademarks without permission
+- Claim original authorship of the Software
+
+Upon termination, you must cease distribution but may retain copies for personal use.
+
+---
+
+## Compatible Licenses
+
+When modifying this Software, you may relicense your modifications under:
+
+- MIT License
+- Apache License 2.0
+- BSD Licenses (2-Clause, 3-Clause)
+- GPL v2, v3 (with attribution)
+- AGPL
+- Mozilla Public License 2.0
+- ISC License
+- LGPL
+
+**Important**: Any compatible license you choose MUST include attribution to the original author.
+
+---
+
+## Attribution Examples for Derivatives
+
+### Example 1: Open Source Fork
+```markdown
+# MyProject
+
+This is a fork of [AI Dev Assistant](https://github.com/steeven-louk/ai-dev-assistant) 
+by Steeven Loukanou.
+
+**Original License**: Attribution License  
+**This Project License**: MIT (with original attribution preserved)
+
+## Changes from Original
+- [What you changed]
+- [What you improved]
+- [What you added]
+
+## Acknowledgments
+Thanks to Steeven Loukanou for the original AI Dev Assistant project.
+```
+
+### Example 2: Commercial Product
+```
+This product includes software from AI Dev Assistant 
+(https://github.com/steeven-louk/ai-dev-assistant) 
+© 2026 Steeven Loukanou, used under the Attribution License.
+
+For more information about the original project, visit:
+https://github.com/steeven-louk/ai-dev-assistant
+```
+
+---
+
+## Fair Use and Community
+
+### A Note on Community and Ethics
+
+While this license grants broad freedoms, we ask that you:
+
+1. **Contribute Back**: If you make improvements, consider contributing them back to the original project via pull requests
+2. **Share Knowledge**: Document and share your learnings with the community
+3. **Respect the Project**: Don't misrepresent the origin or purpose of the Software
+4. **Support the Author**: If the Software provides value, consider supporting the original author
+5. **Give Credit**: Always acknowledge the original work, even when heavily modified
+
+---
+
+## Questions About This License?
+
+If you have questions about what you can or cannot do with this Software:
+
+1. **Check GitHub Issues**: Look for similar questions in the issue tracker
+2. **Open an Issue**: Ask your specific question
+3. **Read Documentation**: Check the README and documentation files
+4. **Contact Author**: Reach out to Steeven Loukanou via GitHub
+
+---
+
+## Changes to This License
+
+The author reserves the right to update this license. Changes will:
+- Apply to new releases going forward
+- Not retroactively affect existing distributions
+- Be clearly documented in project history
+
+Current Version: 1.0 (March 2026)
+
+---
+
+## Summary Table
+
+| Action | Allowed | Notes |
+|--------|---------|-------|
+| Use commercially | ✅ Yes | With attribution |
+| Modify code | ✅ Yes | With attribution |
+| Create derivatives | ✅ Yes | With attribution |
+| Sell products | ✅ Yes | Must credit original |
+| Fork on GitHub | ✅ Yes | Keep attribution |
+| Sublicense | ✅ Yes | Preserve attribution |
+| Remove attribution | ❌ No | Violation of license |
+| Claim original authorship | ❌ No | Violation of license |
+| Use trademarks | ❌ No | Without permission |
+| Private modifications | ✅ Yes | No redistribution required |
+| Publish modifications | ✅ Yes | With attribution |
+| Create paid services | ✅ Yes | With attribution |
+
+---
+
+## Contact & Support
+
+**Original Author**: Steeven Loukanou  
+**GitHub Profile**: https://github.com/steeven-louk  
+**Project Repository**: https://github.com/steeven-louk/ai-dev-assistant  
+**License File**: [LICENSE](./LICENSE)
+
+---
+
+## Version History
+
+**v1.0** - March 2026
+- Initial Attribution License
+- Clear terms for forks and modifications
+- Attribution requirements defined
+- Compatible licenses listed
+
+---
+
+**This License grants you tremendous freedom to use, modify, and distribute this Software.**  
+**The only requirement is that you maintain attribution to the original author.**  
+**Please respect this simple ask and help build a better open-source community.**
+
+---
+
+**Made with ❤️ by Steeven Loukanou**  
+**Last Updated**: March 2026
