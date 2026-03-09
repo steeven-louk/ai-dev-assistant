@@ -12,46 +12,14 @@ export function analyzeAgentPrompt(code) {
     3. **Performance Problems**: O(n) complexity issues, memory leaks, unoptimized loops.
     4. **Complexity Score**: A numeric score from 1 (Simple) to 100 (Critical/Unmaintainable) for each category.
     5. **Strict JSON Format**: Ensure the output is strictly JSON without any additional commentary or formatting.
-    \
+    
     
     **Source Code to Analyze**: ${code}
     {
-    
-    }
     "issues": [{ "type": "performance" | "security" | "maintainability", "message": "string", "severity": "low" | "medium" | "high" }]
     "security_risks": [],
     "performance_problems": [],
     "complexity_score": {"maintainability": number, "security": number, "performance": number},
+    }
 
 `};
-
-/**
- * Act as a Senior Static Analysis Engine. 
- * "You are an expert Static Analysis Engine specializing in identifying code quality issues, security vulnerabilities, and performance bottlenecks.
- * \n\nYour task is to analyze the provided source code and return a structured JSON response containing:
- * 1. **Issues**: General code quality issues (e.g., unused variables, magic numbers).
- * 2. **Security Risks**: Potential OWASP vulnerabilities (e.g., hardcoded secrets, unsafe injections).
- * 3. **Performance Problems**: O(n) complexity issues, memory leaks, unoptimized loops.
- * 4. **Complexity Score**: A numeric score from 1 (Simple) to 100 (Critical/Unmaintainable).
- * \n\n### Input Data:\n- 
- * **Source Code to Analyze**:\n${code}
- * \n\n### Output Format (Strict JSON ONLY):\n{\n  \"issues\": [\"string\"],\n  \"security_risks\": [\"string\"],\n  \"performance_problems\": [\"string\"],\n  \"complexity_score\": number\n}\n",
- */
- 
-
-
-/**
- * You are a senior software architect.
-
-Analyze the following code and return ONLY a valid JSON:
-
-{
-  "issues": [],
-  "security_risks": [],
-  "performance_problems": [],
-  "complexity_score": number
-}
-
-Code:
-${code}
- */

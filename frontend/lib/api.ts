@@ -106,7 +106,7 @@ export async function generateTests(
     if (!data.test_code || !data.coverage_explanation) {
       throw new Error("Invalid response structure from server")
     }
-    console.log("data", data);
+
     return data
   } catch (error) {
     // Wrap errors in consistent error format
