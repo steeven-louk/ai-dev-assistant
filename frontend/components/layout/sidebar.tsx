@@ -11,7 +11,6 @@ import {
   ChevronLeft, 
   ChevronRight,
   Zap,
-//   ShieldCheck,
   FileCode,
   CreditCard,
   Languages,

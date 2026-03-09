@@ -25,8 +25,6 @@ const recentAnalyses = [
   { id: 3, name: "user-profile.tsx", date: "Yesterday", score: 85, status: "Tests Generated" },
 ]
 
-// import { useI18n } from "@/hooks/use-i18n"
-
 export default function HomePage() {
   const { t } = useI18n()
   

@@ -1,8 +1,3 @@
-/**
- * Providers Wrapper Component
- * Aggregates all context providers for the application
- */
-
 "use client"
 
 import { ReactNode } from "react"

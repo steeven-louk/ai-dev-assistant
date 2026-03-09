@@ -1,8 +1,3 @@
-/**
- * TypeScript Interfaces for Backend API Response
- * Strict type definitions matching the backend schemas
- */
-
 export type IssueType = "performance" | "security" | "maintainability"
 export type SeverityLevel = "low" | "medium" | "high"
 

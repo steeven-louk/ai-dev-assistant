@@ -14,10 +14,8 @@ import {
   Check,
   Loader2,
   Sparkles,
-  AlertCircle
 } from "lucide-react"
 
-// import ReactMarkdown from "react-markdown"
 import Prism from "prismjs"
 import "prismjs/themes/prism-tomorrow.css"
 import "prismjs/components/prism-typescript"
@@ -30,6 +28,7 @@ import { useI18n } from "@/hooks/use-i18n"
 import { useSaaS } from "@/hooks/use-saas"
 import { useAnalyzeCode } from "@/hooks/useAnalyzeCode"
 import { CodeEditor } from "@/components/ui/code-editor"
+import { IssuesCard } from "@/components/analyzeCard/issuesCardComponents"
 
 export default function AnalyzePage() {
   const [code, setCode] = React.useState("")
@@ -236,28 +235,7 @@ export default function AnalyzePage() {
                         <div className="space-y-4">
                           {data?.analysis.issues.map((issue, i: number) => (
                             <div key={i} className="flex items-start gap-4 p-4 rounded-xl bg-zinc-900/50 border border-border/50">
-                              <div className={cn(
-                                "p-2 rounded-lg",
-                                issue.severity === 'high' ? 'bg-red-500/10 text-red-400' :
-                                issue.severity === 'medium' ? 'bg-yellow-500/10 text-yellow-400' :
-                                'bg-blue-500/10 text-blue-400'
-                              )}>
-                                <AlertCircle className="w-4 h-4" />
-                              </div>
-                              <div>
-                                <div className="flex items-center gap-2">
-                                  <span className="text-xs font-bold uppercase tracking-wider text-zinc-500">{issue.type}</span>
-                                  <span className={cn(
-                                    "text-[10px] px-1.5 py-0.5 rounded border font-bold uppercase",
-                                    issue.severity === 'high' ? 'border-red-500/20 text-red-400' :
-                                    issue.severity === 'medium' ? 'border-yellow-500/20 text-yellow-400' :
-                                    'border-blue-500/20 text-blue-400'
-                                  )}>
-                                    {issue.severity}
-                                  </span>
-                                </div>
-                                <p className="text-sm text-zinc-300 mt-1">{issue.message}</p>
-                              </div>
+                                <IssuesCard issue={issue} />
                             </div>
                           ))}
                         </div>

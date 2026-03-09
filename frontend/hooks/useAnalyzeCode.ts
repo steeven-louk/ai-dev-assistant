@@ -1,9 +1,3 @@
-/**
- * Custom Hook: useAnalyzeCode
- * TanStack Query integration for code analysis
- * Handles mutations, loading states, errors, and caching
- */
-
 "use client"
 
 import { useMutation } from "@tanstack/react-query"

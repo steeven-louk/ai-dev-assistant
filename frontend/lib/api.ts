@@ -1,9 +1,3 @@
-/**
- * API Service Layer
- * Handles all backend communication using Fetch API
- * Base URL: http://localhost:4000
- */
-
 import {
   AnalyzeCodeRequest,
   AnalyzeCodeResponse,
