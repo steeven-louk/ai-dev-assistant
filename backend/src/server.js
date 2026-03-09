@@ -19,7 +19,7 @@ app.use("/analyze", analyzeRoute);
 app.use("/test", testRoute);
 
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.API_PORT || 4000;
 
 app.listen(PORT, () => {
   console.log(`🚀 Backend running on port ${PORT}`);

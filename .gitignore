@@ -44,6 +44,7 @@ next-env.d.ts
 
 # docker
 docker-compose.yml
+.dockerignore
 
 # cursor
 .cursor/
